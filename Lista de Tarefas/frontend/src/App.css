@@ -1,0 +1,131 @@
+.app-container {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.lista-tarefas {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-tarefas li {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 18px;
+}
+
+.lista-tarefas li:last-child {
+  border-bottom: none;
+}
+
+.lista-tarefas li {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.remove-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.remove-btn:hover {
+  background: #cc0000;
+}
+
+.concluida span {
+  text-decoration: line-through;
+  color: #888;
+  cursor: pointer;
+}
+
+.lista-tarefas li span {
+  cursor: pointer;
+}
+
+/* Adicione ou modifique estas classes no seu App.css */
+.task-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn, .save-btn {
+  background: #ffc107;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-btn {
+  background: #28a745;
+}
+
+.editing {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.editing input {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.status-message {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.status-message.error {
+  color: #d9534f;
+  font-weight: bold;
+}
